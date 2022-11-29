@@ -1,0 +1,1 @@
+//b)Inserção - KE - QE - 8C - JE - 8E - 1O - 2O - 8O - 3O*/
