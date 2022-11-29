@@ -82,7 +82,6 @@ Observe que:
 ●Cada carta é representada da seguinte forma: XN, sendo que X éo número da carta, e N é o naipe, podendo ser: (P) Paus, (O)Ouros, (C) Copas e (E) Espadas.
 ●O valete corresponde ao J, a dama ao Q, e o rei corresponde ao K
 a)Seleção - 1P - 5C - 3O - 1C - 1E - 1O - 2O - KO - 3O
-
 1P
 5C
 3O
@@ -92,4 +91,4 @@ a)Seleção - 1P - 5C - 3O - 1C - 1E - 1O - 2O - KO - 3O
 2O
 KO
 3O
-b)Inserção - KE - QE - 8C - JE - 8E - 1O - 2O - 8O - 3O*/
+*/
