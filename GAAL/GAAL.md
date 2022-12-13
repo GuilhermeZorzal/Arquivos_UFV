@@ -46,13 +46,23 @@ Dado V um espaço vetorial e U e W subsespaços de V, os seguintes grupos estao 
 
 Combinar vetores para descobrir se são LI (linearmente independentes, ou seja, nenhum desses vetores é formado por combinaçao de um ou mais desses vetores) ou LD (linearmente dependente, ou seja, um ou mais desses vetores é formado por combinação de um ou mais desses vetores)
 
-Sendo V um espaço vetorial, $\vec{v}_{1},\vec{v}_{2},...,\vec{v}_{n}$ vetores de V e λ1,λ2,...λn numeros pertencentes a R, temos um vetor $\vec{v}$ obtido pela combinacao linear desses itens, ou seja,
+Sendo V um espaço vetorial, 
+
+$$
+\vec{v}_{1} , \vec{v}_{2} ,..., \vec{v}_{n}
+$$ 
+
+vetores de V e λ1,λ2,...λn numeros pertencentes a R, temos um vetor $\vec{v}$ obtido pela combinacao linear desses itens, ou seja,
 
 $$ 
 \vec{v}  = λ_{1}\vec{v}_{1} + λ_{2}\vec{v}_{2} + ... + λ_{n}\vec{v}_{n}
 $$
 
-O conjunto W formado por todas essas combinaçoes lineares é o subespaço vetorial gerado por V ( W = \[$\vec{v}_{1},\vec{v}_{2},...,\vec{v}_{n}$])
+O conjunto W formado por todas essas combinaçoes lineares é o subespaço vetorial gerado por V :
+
+$$
+W = \[\vec{v}_{1},\vec{v}_{2},...,\vec{v}_{n}]
+$$
 
 ### LI e LD:
 
@@ -107,7 +117,7 @@ Montando o sistema:
 $$
 \left\{\begin{matrix}
 1 = 2a \\
--2 = a+b\end{matrix}\right.
+-2 = a + b \end{matrix}\right.
 $$
 
 Logo, temos que a = 1/2 e b = $\frac{-5}{2}$
@@ -123,17 +133,28 @@ Ex.: T:R² -> R³. Funcao que transforma itens do R² em itens do R³.
 Uma transformacao só é considerada linear se:
 
 $$
-1. T(\vec{v}_{1} + \vec{v}_{2}) = T(\vec{v}_{1}) + T(\vec{v}_{2});
-2. T(λ\vec{v}) = λT(\vec{v});
+1 . T(\vec{v}_{1} + \vec{v}_{2}) = T(\vec{v}_{1}) + T(\vec{v}_{2});
+$$
+
+$$
+2 . T(λ\vec{v}) = λT(\vec{v});
 $$
 
 ### Matriz mudança de base
 
 Dada uma transformação linear T, ela pode ser uma transnformação linear que gera uma mudança de base. Essa transformação pode ser escrita como uma <ins>matriz mudança de base</ins> e é denotada por \[T]. No caso de uma matriz que realiza a mudança da base $\alpha$ para uma base $\beta$ temos: $[T]_{\alpha }^{\beta }$.
 
-Ex.: Se tivermos \[u]$_{\alpha}$ e quisermos ele na base $\beta$, temos que 
+Ex.: Se tivermos 
 
-\[u]$_{\beta}$ = $[T]_{\beta }^{\alpha }$ * \[u]$_{\alpha}$
+$$
+\[u]_{\alpha}
+$$ 
+
+e quisermos ele na base $\beta$, temos que
+
+$$
+\[u]_{\beta} = \[T]_{\beta }^{\alpha } * \[u]_{\alpha}
+$$
 
 Ex.: Dada T: R² -> R² e as bases $\alpha$ ={(1,0),(2,2)} e $\beta$ = {(1,2),(3,4)} , encontre a matriz mudança de base.
 
@@ -153,11 +174,14 @@ $\alpha_{1}$ => (1,0) = (a + 3b, 2a + 4b);
 $\alpha_{2}$ => (2,2) = (c + 3d, 2c + 4d);
 
 Caimos nos seguintes sistemas:
+
 $$
 \left\{\begin{matrix}
 1 = a + 3b \\
 0 = 2a + 4b\end{matrix}\right.
+$$
 
+$$
  \left\{\begin{matrix}
 2 = c + 3d \\
 2 = 2c + 4d\end{matrix}\right.
@@ -171,11 +195,11 @@ Logo, \[(1,0)]<sub>$\beta$</sub> = (-2,1) e \[(2,2)]<sub>$\beta$</sub> = (-1,1)
 
 Para gerar a matriz, basta preencher agora com os vetores da direita para esquerda: 
 
-$$\begin{bmatrix}
+$$
+\begin{bmatrix}
 a & c \\
 b & d \\
-\end{bmatrix}
-=
+\end{bmatrix} =
 \begin{bmatrix}
 -2 & -1 \\
 1 & 1 \\
@@ -184,7 +208,17 @@ $$
 
 ### Inversa da matriz mudança de base
 
-Se a matriz $[T]_{\beta }^{\alpha }$ transforma os elementos da base $\alpha$ para a base $\beta$, entao a inversa dessa matriz transforma os elementos da da base $\beta$ para a base $\alpha$, ou seja, ($[T]_{\beta }^{\alpha }$ )<sup>-1</sup>
+Se a matriz 
+
+$$
+\[T]_{\beta }^{\alpha }
+$$
+
+transforma os elementos da base $\alpha$ para a base $\beta$, entao a inversa dessa matriz transforma os elementos da da base $\beta$ para a base $\alpha$, ou seja, 
+
+$$
+(\[T]_{\beta }^{\alpha })^{-1}
+$$
 
 
 ## Diagonalização
@@ -202,17 +236,12 @@ det(A - λ<sub>j</sub> I) = 0.
 Como é uma matriz nxn, encontraremos um polinomio de grau n. Geralmente esse polinomio ja aparece com implificado.
 
 Para cada λ, substituimos em 
-$
+
+$$
 (A - λ_{j}I)\vec{v_{j}} = \vec{0} 
-$
-. (Note que 
-$
-\vec{v_{j}}
-$ é uma matriz coluna de tamanho n e
-$
-\vec{0}
-$
- é a matriz coluna do vetor nulo da nª dimensao)
+$$
+
+(Note que $\vec{v_{j}}$ é uma matriz coluna de tamanho n e $\vec{0}$ é a matriz coluna do vetor nulo da nª dimensao)
 
 Obs.: Se A for uma matriz triangular, os valores de λ são dados pelo elementos da diagonal principal
 
@@ -241,7 +270,7 @@ Logo, para um mesmo λ temos dois autovetores.
 
 Obs.: Para escolher os valores dos autovetores de P, de preferencia a valores que tornem as coordenadas do vetor inteiras.
 
-Inverte-se P e para achar P-¹.
+Inverte-se P e para achar P<sup>-1</sup>.
 
 A matriz A nao é diagonalizavel se P nao existir. P nao existe se a sua dimensao for diferente da dimensao de A (Ex.: A = 2x2 e P = 2x1. A não é diagonalizavel).
 
@@ -265,27 +294,27 @@ Dada uma geração 1 e o genotipo fixado, calcula-se as equações dos novos gen
 seja a<sub>1</sub> a porcentagem de AA, b<sub>1</sub> a porcentagem de Aa e c<sub>1</sub> a quantidade de aa (sendo a<sub>0</sub>, b<sub>0</sub> e c<sub>0</sub> a porcentagem da geração anterior). Pela tabela, qual será a nova porcentagem? 
 
 Usando exempplo feito em sala:
-$
+
+$$
 \left\{\begin{matrix}
 a_{n} = a_{n-1} + \frac{1}{2} b_{n-1}\\
 b_{n} = c_{n-1} + \frac{1}{2}b_{n-1}\\
 c_{n} = 0 \\
 \end{matrix}\right.
-$
+$$
 
 Como trata-se de um sistema, pode-se escrever como uma multiplicação de matrizes:
+
 $$
 \begin{bmatrix}
 a_{n} \\
 b_{n} \\
-c_{n}\end{bmatrix}
-=
+c_{n}\end{bmatrix} =
 \begin{bmatrix}
 1 & \frac{1}{2} & 0 \\
 0 & \frac{1}{2} & 1 \\
 0 & 0 & 0 \\
 \end{bmatrix} 
-
 \begin{bmatrix}
 a_{n-1} \\
 b_{n-1} \\
