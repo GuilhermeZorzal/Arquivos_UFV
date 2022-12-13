@@ -121,6 +121,7 @@ Espécie de função. Ela transforma o elemento de um certo espaço em um elemen
 Ex.: T:R² -> R³. Funcao que transforma itens do R² em itens do R³.
 
 Uma transformacao só é considerada linear se:
+
 $$
 1. T(\vec{v}_{1} + \vec{v}_{2}) = T(\vec{v}_{1}) + T(\vec{v}_{2});
 2. T(λ\vec{v}) = λT(\vec{v});
