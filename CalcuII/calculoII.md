@@ -6,7 +6,10 @@ Exemplo: f(x,y) = x+y²
 
 Dada uma certa função, podemos encontrar seu dominio
 
-Ex.: Dominio de f(x,y) = ✓(x+y+1)/x-1 
+Ex.: Dominio de
+$$
+f(x,y) = \frac{\sqrt{x+y+1}}{x-1}
+$$
 
 Para ser definida, a parte superior deve estar definida, ou seja, x+y+1 >= 0. Logo, y >= -x-1
 
@@ -52,7 +55,7 @@ f<sub>y</sub> = 3y²
 
 z-1 = 2x<sub>0</sub>(x - 2) + 3y<sub>0</sub><sup>2</sup> = 
 
-z-1 = 2*2(x-2) + 3*9(y-3) =
+z-1 = 2 * 2(x-2) + 3 * 9(y-3) =
 
 z-1 = 4x - 8 + 27y - 81 = 
 
@@ -90,5 +93,6 @@ Pensando numa arvore das funções e suas variaveis, a derivada seria a soma de 
 
 Dada uma equação F(x,y,z), onde z depende de x e y, e queremos a derivada de z em relação a x por exemplo, temos que :
 
-∂z/∂x = - F<sub>x</sub>/F<sub>z</sub>
-
+$$
+\frac{∂z}{∂x} = - \frac{F_{x}}{F_{z}}
+$$
