@@ -61,7 +61,7 @@ $$
 O conjunto W formado por todas essas combinaçoes lineares é o subespaço vetorial gerado por V :
 
 $$
-W = \[\vec{v}_{1},\vec{v}_{2},...,\vec{v}_{n}]
+W = [\vec{v}_{1},\vec{v}_{2},...,\vec{v}_{n}]
 $$
 
 ### LI e LD:
@@ -147,13 +147,13 @@ Dada uma transformação linear T, ela pode ser uma transnformação linear que 
 Ex.: Se tivermos 
 
 $$
-\[u]_{\alpha}
+[u]_{\alpha}
 $$ 
 
 e quisermos ele na base $\beta$, temos que
 
 $$
-\[u]_{\beta} = \[T]_{\beta }^{\alpha } * \[u]_{\alpha}
+[u]_{\beta} = [T]_{\beta }^{\alpha } * [u]_{\alpha}
 $$
 
 Ex.: Dada T: R² -> R² e as bases $\alpha$ ={(1,0),(2,2)} e $\beta$ = {(1,2),(3,4)} , encontre a matriz mudança de base.
@@ -211,13 +211,13 @@ $$
 Se a matriz 
 
 $$
-\[T]_{\beta }^{\alpha }
+[T]_{\beta }^{\alpha }
 $$
 
 transforma os elementos da base $\alpha$ para a base $\beta$, entao a inversa dessa matriz transforma os elementos da da base $\beta$ para a base $\alpha$, ou seja, 
 
 $$
-(\[T]_{\beta }^{\alpha })^{-1}
+([T]_{\beta }^{\alpha })^{-1}
 $$
 
 
