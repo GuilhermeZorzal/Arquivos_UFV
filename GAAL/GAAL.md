@@ -35,10 +35,9 @@ Exercicio 2:
 O vetor (0) esta contido no subespaço. Logo, a primeira propriedade foi satisfeita. Como se trata de uma reta, e sabemos que toda reta é espaço vetorial, logo V é espaço vetorial
 -->
 ## Intercessão de subespaços
-Dado V um espaço vetorial e U e W subsespaços de V, os seguintes grupos estao contidos em V:
+Dado V um espaço vetorial e U e W subsespaços de V, os seguintes grupos estao contidos em V e são subespaços vetoriais:
 
 	- U intercessao W;
-	- U uniao W;
 	- U + W;
 
 
