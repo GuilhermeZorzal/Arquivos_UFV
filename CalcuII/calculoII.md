@@ -96,3 +96,88 @@ Dada uma equação F(x,y,z), onde z depende de x e y, e queremos a derivada de z
 $$
 \frac{∂z}{∂x} = - \frac{F_{x}}{F_{z}}
 $$
+
+
+## derivadas direcionais e vetor gradiente
+
+
+Dada f (x,y) e um vetor (a,b), a derivada direcional de f na direção do vetor (a,b) é D<sub>u</sub>f(x,y) = 
+f<sub>x</sub>(x,y)a + f<sub>y</sub>(x,y)b
+
+
+### Vetor gradiente
+
+$$
+\triangledown f = \left< f_{x}(x,y),f_{y}(x,y)\right> = \frac{\partial f}{\partial x}i +  \frac{\partial f}{\partial y}j
+$$
+
+
+Se for dado o vetor em funçao de i e j, basta multiplica-los pelo vetor gradiente encontrado pela formula acima
+
+O mesmo esquema se repete para funções do tipo f(x,y,z)
+
+## Maximos e minimos
+
+No ponto (a,b), se temos um ponto crítico, entao f<sub>x</sub>(a,b) = 0 e f<sub>y</sub>(a,b) = 0, 
+
+Se ∇f(a,b) = 0, então temos um ponto crítico.
+
+Um ponto crítico nao necessariamente é um maximo ou minimo local. Ele pode ser um ponto de sela por exemplo.
+
+### Teste da segunda derivada
+
+Para descobrir se um dado ponto é maximo ou minimo ou ponto de sela, pode-se realizar o teste da segunda derivada
+
+Dado 
+
+$$
+D = f_{xx}*f_{yy} - [f_{xy}]^{2} = \begin{vmatrix}
+f_{xx} & f_{xy} \\
+f_{xy} & f_{yy} \\
+\end{vmatrix}
+$$
+
+Temos que:
+
+- Se D > 0 e f<sub>xx</sub>(a,b) > 0, f(a,b) é minimo local
+- Se D > 0 e f<sub>xx</sub>(a,b) < 0, f(a,b) é máximo local
+- Se D < 0, f(a,b) não é nem mínimo nem máximo local
+
+Para descobrir os valores que são pontos críticos, iguala-se f<sub>x</sub> e f<sub>y</sub>, gerando um sistema
+
+
+
+
+
+
+
+
+
+
+
+Seção 14.1 -> 10, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 43,45,47,49
+Seção 14.3 -> 10, 11, 15, 16, 28, 22, 41, 47, 48, 50, 53, 54, 64
+Seção 14.4 -> 1, 2, 3, 4, 5, 6
+Seção 14.5 -> 1, 3, 6, 7, 9, 10, 18, 19, 21, 27, 31, 34, 45, 47
+Seção 14.6 -> 4, 5, 6, 7, 8, 12, 13, 21, 23, 25, 55, 57
+Seção 14.7 -> 1, 5, 6, 7, 11, 29, 30, 39, 40, 42, 44, 48
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
