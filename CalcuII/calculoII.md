@@ -7,6 +7,7 @@ Exemplo: f(x,y) = x+y²
 Dada uma certa função, podemos encontrar seu dominio
 
 Ex.: Dominio de
+
 $$
 f(x,y) = \frac{\sqrt{x+y+1}}{x-1}
 $$
