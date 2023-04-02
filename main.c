@@ -8,7 +8,10 @@ int main(){
     for (c = 0; c< 10; c++){
         Insere(&ponta, vetor[c]);
     }
+    fila fila1;
 
-    Percorre(&ponta);
+    Percorre_ordem(&ponta);
+    Percorre_posordem(&ponta);
+    Percorre_preordem(&ponta);
     return 0;
 }

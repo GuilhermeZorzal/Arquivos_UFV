@@ -20,12 +20,25 @@ int Insere(TipoApontador *no, long item){
     }
 
 }
-int Percorre(TipoApontador * no){
+int Percorre_ordem(TipoApontador * no){
     if ((*no) == NULL){
         return 0;
     }
-    Percorre(&((*no)->Esq));
+    Percorre_ordem(&((*no)->Esq));
     printf("%ld\n",(*no)->Reg);
-    Percorre(&((*no)->Dir));
+    Percorre_ordem(&((*no)->Dir));
     return 0;
 }
+
+int Percorre_preordem(TipoApontador * no);
+
+int Percorre_posordem(TipoApontador * no){
+    if ((*no) == NULL){
+        return 0;
+    }
+    Percorre_ordem(&((*no)->Esq));
+    Percorre_ordem(&((*no)->Dir));
+    printf("%ld\n",(*no)->Reg);
+    return 0;
+}
+
