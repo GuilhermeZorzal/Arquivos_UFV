@@ -1,28 +1,28 @@
+
 #include "dados.h"
 
 int main(){
     char nome_arq[30];
-    FILE * arq;
-
-    char Linha[50];
 
 
-    printf("Insira o nome do arquivo:\n");
-    scanf("%s", &nome_arq);
-    arq = fopen(nome_arq, "rt");
-    
+    char Linha[50], nome[30];
+    char codigo[8];
+    int vetor_aleatorio,valor;
+    gera_vetor_aleatorio(&vetor_aleatorio);
 
-    if (arq == NULL){
-        printf("Problemas na abertura do arquivo\n");
-        return;
+    dados info;
+    vetor tripu;
+
+    for(int i=0; i < MAX; i++){
+        scanf("%s",&codigo);
+        scanf("%s",&nome);
+        for (int c = 0; c < 30 || nome[c] == ' '; c++){
+            valor += (nome[c] - 48)*(c+1);
+        }
+        strcpy(&info.codigo, &codigo);
+        strcpy(&info.nome, &nome);
+        insere_item(&tripu, &info, valor );
     }
 
-    while (!feof(arq)){
-        fgets(Linha, 100, arq);  
-        
-    }
-
-    printf("roda");
-    fclose(arq);
     return 0;
 }
