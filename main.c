@@ -1,17 +1,28 @@
-#include "struct.h"
+#include "dados.h"
 
 int main(){
-    long vetor[] = {1,3,2,7,8,5,9,0,12,54};
-    int c;
-    TipoApontador ponta;
-    inicializa(&ponta);
-    for (c = 0; c< 10; c++){
-        Insere(&ponta, vetor[c]);
-    }
-    fila fila1;
+    char nome_arq[30];
+    FILE * arq;
 
-    Percorre_ordem(&ponta);
-    Percorre_posordem(&ponta);
-    Percorre_preordem(&ponta);
+    char Linha[50];
+
+
+    printf("Insira o nome do arquivo:\n");
+    scanf("%s", &nome_arq);
+    arq = fopen(nome_arq, "rt");
+    
+
+    if (arq == NULL){
+        printf("Problemas na abertura do arquivo\n");
+        return;
+    }
+
+    while (!feof(arq)){
+        fgets(Linha, 100, arq);  
+        
+    }
+
+    printf("roda");
+    fclose(arq);
     return 0;
 }
