@@ -23,6 +23,8 @@ int main(){
         Insere(&hash, &nome[0],codigo);
     }
     Imprime(hash);
+    verifica(&hash, "joana");
+    verifica(&hash, "ana");
 }
 
 /*

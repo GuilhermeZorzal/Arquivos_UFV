@@ -20,3 +20,4 @@ int Insere(Thash * tabela, char * nome, int codigo);
 int hash(char * chave);
 int f_universal(char * chave);
 void Imprime(Thash hash);
+int verifica(Thash * tabela, char * nome);

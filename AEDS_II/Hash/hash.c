@@ -51,3 +51,20 @@ void Imprime(Thash hash){
         printf("%s\n", hash.tabela[i].nome);
     }
 }
+int verifica(Thash * tabela, char * nome){
+    int h,c;
+    h = hash(nome);
+    if (strcmp(tabela->tabela[h].nome, nome) == 0){
+        printf("%s esta na tabela: \ncodigo: %d\n", tabela->tabela[h].nome, tabela->tabela[h].codigo);
+        return 0;
+    }
+    for (c = 0; c < M; c++){
+        h = (h+c+1)%M;
+        if (strcmp(tabela->tabela[h].nome, nome) == 0){
+            printf("%s esta na tabela: \ncodigo: %d\n", tabela->tabela[h].nome, tabela->tabela[h].codigo);
+            return 0;
+        }
+    }
+    printf("%s nao esta na tabela", nome);
+    return 1;
+}
